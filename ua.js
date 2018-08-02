@@ -16,8 +16,8 @@ const is = {
     Windows() {
         return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
     },
-    mobile() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    Mobile() {
+        return (is.Android() || is.BlackBerry() || is.iOS() || is.Opera() || is.Windows());
     },
 };
 
